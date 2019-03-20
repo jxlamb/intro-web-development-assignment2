@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+body > *:not(footer){
+    margin-left: 8px;
+    margin-right: 8px;
+}
+h1, h2{
+    color: cornflowerblue
+}
+ul, ol{
+    margin-top: -15px;
+}
+ol ol{
+    margin-top: 0px;
+}
+h2{
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+span{
+    width: 500px
+}
+li{
+    color: dimgrey;
+}
+section li{
+    color: darkgreen;
+}
+img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+footer{
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+}
+.sublist{
+    font-size: 9pt;
+}
+.listHeader{
+    margin-left: -20px;
+    color: darkslateblue;
+}
+.longList > li:nth-child(even) {
+    background-color: lightgray;
+}
+#section1{
+    font-size: 12pt;
+}
+div > p{
+    color: teal;
+}
+header a:link, a:visited{
+    text-decoration: none;
+    background-color: mediumaquamarine;
+    border: 1px solid grey;
+    color: deeppink;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 1px;
+}
+header a:hover, a:active{
+    background-color: blue;
+    color: coral;
+}
+header a:hover a:nth-child(3){
+    background-color: cyan;
+}
+.outerBox{
+    background-color: aqua;
+    width: 700px;
+    padding: 10px;
+    border:10px solid pink;
+}
+.innerBox{
+    background-color: teal;
+    width: 500px;
+    padding: 10px;
+    border:10px solid purple;
+    margin: auto;
+}
+.floatingParagraph{
+    width: 50%;
+    height: 50px;
+    border: 1px solid black;
+}
+.floatDiv{
+    background-color: aqua;   
+    height: 160px;
+}
+.floatP1{
+    background-color: teal;
+    float: right;
+    clear: right;
+}
+.floatP2{
+    background-color: orange; 
+    float: left;
+    clear: left;
+}
+.floatP3{
+    background-color: seagreen;
+    float: right;
+    clear: left;
+}
+.floatP4{
+    background-color: brown; 
+    float: left;
+}
+@media (max-width: 900px){
+    .relParagraph{
+        width: 25%;
+        height: 100px;
+        border: 1px solid black;
+    }
+    .relDiv{
+        background-color: aqua;   
+        height: 300px;
+        position: relative;
+    }
+    .relP1{
+        background-color: teal;
+        position: absolute;
+        top: 10px;
+        left: 30px;
+    }
+    .relP2{
+        background-color: orange; 
+        position: absolute;
+        bottom: 10px;
+        left: 30px;
+    }
+    .relP3{
+        background-color: seagreen;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+    }
+    .relP4{
+        background-color: brown; 
+        position: absolute;
+        bottom: 10px;
+        right: 30px;
+    }
+    .innerMostBox{
+        background-color: darkblue;
+        width: 300px;
+        padding: 10px;
+        border:10px solid red;
+        color: aliceblue;
+        margin: auto;
+    }
+    .scrollingBox{
+        overflow: auto;
+        height: 150px;
+    }
+    .imageBox{
+        background-color: transparent;
+        width: 200px;
+        height: 300px;
+        padding: 10px;
+        border:10px solid red;
+        color: white;
+        margin: auto;
+        background-image: url(../images/sammy.jpg);
+        background-size: 100% 100%;
+    }
+}
+@media (min-width: 901px){
+    .relParagraph{
+        width: 25%;
+        height: 125px;
+        border: 1px solid black;
+    }
+    .relDiv{
+        background-color: aqua;   
+        height: 350px;
+        position: relative;
+    }
+    .relP1{
+        background-color: teal;
+        position: absolute;
+        top: 20px;
+        left: 50px;
+    }
+    .relP2{
+        background-color: orange; 
+        position: absolute;
+        bottom: 20px;
+        left: 50px;
+    }
+    .relP3{
+        background-color: seagreen;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+    }
+    .relP4{
+        background-color: brown; 
+        position: absolute;
+        bottom: 20px;
+        right: 50px;
+    }
+    .innerMostBox{
+        background-color: darkblue;
+        width: 400px;
+        padding: 10px;
+        border:10px solid red;
+        color: aliceblue;
+        margin: auto;
+    }
+    .scrollingBox{
+        overflow: auto;
+        height: 250px;
+    }
+    .imageBox{
+        background-color: transparent;
+        width: 300px;
+        height: 400px;
+        padding: 10px;
+        border:10px solid red;
+        color: white;
+        margin: auto;
+        background-image: url(../images/sammy.jpg);
+        background-size: 100% 100%;
+    }
+}
